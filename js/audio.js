@@ -311,9 +311,7 @@ export const atmosphereSystem = {
     menuMusicGain.connect(masterGain);
 
     try {
-      const response = await fetch(
-        "./audio/Shatta-Wale-Ft-Amerado-Blessings-(TrendyBeatz.com).mp3",
-      );
+      const response = await fetch("./audio/freepik-deep-calm.mp3");
       const arrayBuffer = await response.arrayBuffer();
       const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
 
@@ -335,7 +333,7 @@ export const atmosphereSystem = {
     bgMusicGain.connect(masterGain);
 
     try {
-      const response = await fetch("./audio/freepik-deep-calm.mp3");
+      const response = await fetch("./audio/gamebackgroundsound.mp3");
       const arrayBuffer = await response.arrayBuffer();
       const audioBuffer = await audioCtx.decodeAudioData(arrayBuffer);
 
